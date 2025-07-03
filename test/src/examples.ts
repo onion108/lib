@@ -1,4 +1,5 @@
 import test from './example.sciux?raw'
+import bar from './template/chart/bar.sciux?raw'
 import angle from './template/math/angle.sciux?raw'
 import circle from './template/math/circle.sciux?raw'
 import figure from './template/math/figure.sciux?raw'
@@ -13,5 +14,8 @@ export default {
     figure,
     circle,
     plane,
+  },
+  '@sciux/chart': {
+    bar,
   },
 }

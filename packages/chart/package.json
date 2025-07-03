@@ -1,8 +1,8 @@
 {
-  "name": "sciux",
+  "name": "@sciux/chart",
   "type": "module",
   "version": "0.0.6",
-  "description": "Sciux library composed package.",
+  "description": "Chart components for SciuxKit",
   "author": "BijonAI <info@bijon.ai>",
   "license": "MIT",
   "repository": {
@@ -30,12 +30,10 @@
     "start": "tsx src/index.ts"
   },
   "dependencies": {
-    "@sciux/chart": "workspace:*",
-    "@sciux/layout": "workspace:*",
-    "@sciux/math": "workspace:*",
-    "@sciux/model": "workspace:*",
-    "@sciux/utils-theme": "workspace:*",
-    "@sciux/widget": "workspace:*",
+    "@sciux/utils-theme": "workspace:^",
+    "@sciux/widget": "workspace:^",
+    "@vue/reactivity": "^3.5.14",
+    "arktype": "^2.1.20",
     "sciux-laplace": "catalog:"
   }
 }

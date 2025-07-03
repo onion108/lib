@@ -1,6 +1,7 @@
 import type { RegisterContext } from './types'
 import { theme } from '@sciux/utils-theme'
 import { animations, flows, root, textModes } from 'sciux-laplace'
+import chart from './chart'
 import layout from './layout'
 import math from './math'
 import model from './model'
@@ -12,7 +13,7 @@ const defaultContext: RegisterContext = {
   animations,
   textModes,
 }
-const registers = [widget, model, layout, math]
+const registers = [widget, model, layout, math, chart]
 animations.set('creation', [])
 
 export default function (context: RegisterContext = defaultContext): void {
@@ -30,6 +31,7 @@ export function applyTheme(selector: string): void {
   }
 }
 
+export * from './chart'
 export * from './layout'
 export * from './math'
 export * from './model'
